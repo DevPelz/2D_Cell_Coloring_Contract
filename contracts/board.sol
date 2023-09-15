@@ -42,6 +42,22 @@ contract Board {
         return getColor(uint8(_boardIds[_x][_y]));
     }
 
+    function getColorAtCoordinates(
+        uint8 _x1,
+        uint8 _x2,
+        uint8 _y1,
+        uint8 _y2
+    ) external view returns (string memory, string memory) {
+        require(
+            (_x1 <= boardSize_x_axis && _x2 <= boardSize_x_axis) &&
+                (_y1 <= boardSize_y_axis && _y2 <= boardSize_y_axis),
+            "Invalid coordinates"
+        );
+        Colors color1 = _boardIds[_x1][_y1];
+        Colors color2 = _boardIds[_x2][_y2];
+        return (getColor(uint8(color1)), getColor(uint8(color2)));
+    }
+
     function getColor(uint8 _id) internal pure returns (string memory) {
         if (_id == 1) return "Black";
         if (_id == 2) return "Red";
