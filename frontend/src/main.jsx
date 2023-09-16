@@ -8,7 +8,6 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { sepolia } from "viem/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import "@rainbow-me/rainbowkit/styles.css";
 import "./App.css";
 
