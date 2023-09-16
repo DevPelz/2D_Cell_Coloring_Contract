@@ -53,3 +53,5 @@ string memory cellColor = board.getCellColor(2, 3);
 Run `npm run dev` in your terminal, and then open [localhost:5173](http://localhost:5173) in your browser.
 
 Once the webpage has loaded, changes made to files inside the `src/` directory (e.g. `src/App.tsx`) will automatically update the webpage.
+
+You can find a demo off the app [here](https://bafybeies6xxnofosc7f5vhyfsmg66pvotsdyyzx4rxfssbjmntywmtja3y.ipfs.sphn.link/)
