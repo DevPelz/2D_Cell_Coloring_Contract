@@ -1,5 +1,5 @@
 import boardContract from "../contracts/Board.json";
-const { VITE_CONTRACT_ADDRESS } = import.meta.env;
+// const { VITE_CONTRACT_ADDRESS } = import.meta.env;
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
@@ -17,7 +17,7 @@ export function App() {
   const { data, isError, isLoading } = useContractReads({
     contracts: [
       {
-        address: VITE_CONTRACT_ADDRESS,
+        address: "0x372aE1a6D3991E4140411F3E0FB906B95F1B1015",
         abi: boardContract.abi,
         functionName: "getCellColor",
         args: [coord.x - 1, coord.y - 1],

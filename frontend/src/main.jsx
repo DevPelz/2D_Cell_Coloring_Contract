@@ -11,11 +11,7 @@ import { publicProvider } from "wagmi/providers/public";
 import "@rainbow-me/rainbowkit/styles.css";
 import "./App.css";
 
-const { VITE_SEPOLIA_API } = import.meta.env;
-const { chains, publicClient } = configureChains(
-  [sepolia],
-  [alchemyProvider({ apiKey: VITE_SEPOLIA_API }), publicProvider()]
-);
+const { chains, publicClient } = configureChains([sepolia], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
