@@ -15,11 +15,7 @@ import "./App.css";
 const { VITE_SEPOLIA_API } = import.meta.env;
 const { chains, publicClient } = configureChains(
   [sepolia],
-  [
-    alchemyProvider({ apiKey: VITE_SEPOLIA_API }),
-    // jsonRpcProvider({ rpc: () => ({ http: "https://rpc.ankr.com/gnosis" }) }),
-    publicProvider(),
-  ]
+  [alchemyProvider({ apiKey: VITE_SEPOLIA_API }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
