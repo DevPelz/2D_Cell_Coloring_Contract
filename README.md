@@ -46,10 +46,10 @@ string memory cellColor = board.getCellColor(2, 3);
 // Retrieve colors at specific coordinates
 (string memory color1, string memory color2) = board.getColorAtCoordinates(1, 4, 2, 3);
 
+```
 
 # Getting Started
 
 Run `npm run dev` in your terminal, and then open [localhost:5173](http://localhost:5173) in your browser.
 
 Once the webpage has loaded, changes made to files inside the `src/` directory (e.g. `src/App.tsx`) will automatically update the webpage.
-```
