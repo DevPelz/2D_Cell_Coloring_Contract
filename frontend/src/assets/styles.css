@@ -4,16 +4,15 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     display: block;
     height: 100vh;
-    padding-top: 10rem;
 }
 
 .container {
+    margin: auto;
     position: relative;
-    height: 100vh;
-    /* background: silver; */
+    
 }
 
 /* BOARD STYLESHEET */
